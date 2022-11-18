@@ -1,0 +1,207 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  nav{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(8, 8, 8);
+    line-height: 75px;
+    padding: 0px 43.25px;
+    align-content: flex-start;
+    position:fixed;
+    z-index: 1;
+  }
+  nav .logo{
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  nav .logo p{
+    float: left;
+    color: 	rgb(245, 245, 248);
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  nav ul{
+    float: right;
+  }
+  nav ul li{
+    display: inline-block;
+    margin-left: 75px;
+    padding-top: 5px;
+    position: relative;
+  }
+  nav ul li a{
+    color: 	rgb(126, 244, 236);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  nav ul li a:hover  {
+    color: rgb(247, 244, 244);
+  }
+  nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(253, 251, 251);
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  }
+  nav a:hover::before{
+    width: 100%;
+    transition: all .4s ease-in-out;
+  }
+  h1 {
+    float: left;
+  }
+  h2{
+    float: right;
+  }
+  h3 {
+    float: left;
+  }
+  h4{
+    float: right;
+  }
+  h5 {
+    float: left;
+  }
+  h6 {
+    float: right;
+  }
+  h7 {
+    float: left;
+  }
+  h8 {
+    float: right;
+  }
+  h9 {
+    float: left;
+  }
+  .box3{
+    width: 1100px;
+    height: 550px;
+    margin-top: 60;
+    margin-left: 200;
+    padding: 30;
+    color: #4ecca3;
+    background-color: rgb(6, 6, 6);
+    display: inline-block;
+    }
+  
+  .circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;  
+  }
+  .circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+  }
+  
+  
+  .circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+  }
+  
+  .circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+  }
+  
+  .circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+  }
+  
+  .circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+  }
+  
+  .circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+  }
+  
+  .circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+  }
+  
+  .circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+  }
+  
+  .circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+  }
+  
+  .circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+  }
+  @keyframes animate {
+   
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+  
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+  
+  }
+  
